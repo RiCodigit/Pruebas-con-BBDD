@@ -1,4 +1,4 @@
-﻿# Practicas con SLQ Server.
+﻿﻿# Practicas con SLQ Server.
 Hoy he Creado una BBDD (base de datos), con el siguiente Query.
 
     create database Venta1

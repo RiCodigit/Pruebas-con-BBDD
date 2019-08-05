@@ -64,3 +64,33 @@ Log on
 
 	alter table producto
 	alter column descripcion nvarchar(150)
+
+
+
+			-- Primary Key --
+
+	-- borramos la anterior tabla para crearla con la primary key
+	-- drop table producto 
+	
+	create table producto(
+	id int primary key not null,
+	nombreproducto nvarchar(40),
+	descripcion nvarchar(200))
+
+
+			-- SELECT y vistas --
+	use Venta1
+	SELECT   id, nombre, telefono
+	FROM         dbo.Clientes
+
+	 -- Aprendi a Realizar Vista de forma visual.
+	 /*
+		Otros Ejemplos
+
+		-SELECT   *	FROM         dbo.Clientes
+
+		-SELECT   id AS [ID de Cliente], nombre AS [Nombre de Cliente], telefono AS [Telefono de Cliente]
+		 FROM     Clientes
+		 ORDER BY [ID de Cliente] DESC
+
+	 */
